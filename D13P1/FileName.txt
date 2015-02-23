@@ -1,0 +1,1 @@
+ReadFile = "C:\\Users\\Aman\\Documents\\GitHub\\javaProjects\\D13P1\\Capitals.txt"

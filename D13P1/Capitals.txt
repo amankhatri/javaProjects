@@ -1,0 +1,3 @@
+Illinois = SpringField
+Missouri = PlaceInMissouri
+Alabama = PlaceInAlabama
