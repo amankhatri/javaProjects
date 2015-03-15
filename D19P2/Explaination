@@ -1,0 +1,51 @@
+java resources: we will place all java files in here
+in WebContent folder we have
+	META-INF - this folder should have a Manifest file 
+	WEBINF
+	and all the  folder we place all HTML, JS, images ets
+
+if we have to upload a file to server, it only accepts two kinds of file 
+War - example projectName.war - webarchive 
+and another file format which is acceted is Ear - enterprise archive, which is only for application server
+
+now for this project we will create a war file and put (deploy) it on the server
+
+now if you type localhost:port/ProjectName/fileName.html
+the file would pop up 
+so on server 
+we are going to 
+ProjectName/Webcontent/Filename.html
+
+so we can conclude the server will go to webcontent rightway.
+
+Now if we go to to 
+
+if any url request from browser matches the link localhost:port/projectName/Hello match it to 
+ <url-pattern>/hello</url-pattern> in web.xml file. 
+ and now since web.xml has 
+  <servlet>
+        <servlet-name>cFS</servlet-name>
+        <servlet-class>firstServlet</servlet-class>
+    </servlet>
+    and class name is the name of the class of servlet called firstServlet, the class would be invoked, and init, doget/dopost and destroyed methods will be called in specified sequence.
+
+    Although there is only one class , there would be multiple threads for multiple users. 
+
+    Flow of communication
+    browser talks with server, server talks with application and back and forth
+
+    	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		System.out.println("Hello world");
+		/*Using a response object which server is giving to me, to open a stream for communication between webserver and 
+		servlet. Webserver reads it from a stream and give it to browser*/
+		PrintWriter out = response.getWriter();
+		out.println("Hello from Servlet"); // we are writing stuff to output stream
+		out.flush();
+
+		/*now since the webbroswer mostly understands text/html we would have to set the response content type before using 
+		response object. response.setContent("text/content") there are several other content types which can
+		be found from api*/
+	}
+	httpServletResponse will respond to the request made by HTTPServletRequest object. 
+always use doPost method
