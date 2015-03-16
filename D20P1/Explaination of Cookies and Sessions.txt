@@ -1,0 +1,9 @@
+A session handleing is a concept where server maintains the session for each user. 
+	Server can be used be millions of users simultaneously. and each user has a session id associated with it. 
+	session Id is an id created by the server for each connection or request sent to the server from browser. 
+	Session id is only created once and destroyed when we close the browser.
+	Session Id is shared on one server between different servlets. Session id is shared by all servlets
+	Now we can conclude that sessionId is a common factor between all the web applications
+Values can be stored and retrieved in a session . for example if someone is buying something online, he may have a shopping caart and to keep adding stuff in shopping cart. we may have to store information of each purchase so that user can check out everthing togeather.
+
+Sessions are used to store the information temporily as soon as the user closses the browser the session and the stored infor are destroyed.
