@@ -34,6 +34,7 @@ public class readCookie extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.print("Cookie: Id");
 		out.print(c[0]);
+		
 	}
 
 	/**
