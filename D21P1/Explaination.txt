@@ -1,0 +1,11 @@
+Sessions and Cookes are used to store client values. However, both of them are different. 
+Sessions stores the information partially. A value in session can not be retrived after closing a browser. Session is stored in the server. However, cookies are temprory storage on client side. Now, you can store the informations on clients side.
+
+Servlet will pass an instruction to browser to store the information on browsers memory, after reading that instruction, the browser will store the info in cookies folder. Now next time when you go to the link you browser will retrive the credit card number from your browser. The advantage is, that we do not have to create sessions and we can save memory.
+
+Things to remember how to give the instruction to create the values, and how do we send that infor, store that infor and retrive that information. if you close the browser it will delete the cookies.
+
+1) Instruct the browser to store the cookies, 
+2) how to read the cookie value which are sent by the browser
+
+Servlet responds, client request
