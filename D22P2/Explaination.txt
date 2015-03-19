@@ -1,0 +1,25 @@
+In JSP we don't have doget or do post methods. JSP uses implicit objects. Implicit objects are already created objects for you. You don't have to create 
+Response response = new Response() you can just go ahead and use them
+
+We have implesic objects
+1) Page
+2) Request - THis is an object of class httpservletRequest which is a ready made object (Implicit object). 
+3) Response- Is a type of http servlet response
+4) OUt  - it is of type print writer 
+5) Sessions - it is of type HttpSession / The values stored in session is only valid duing session
+6) application - it is of type Application, it will allow you to store some values using key value pair. the values stored in application object can be retrieved anywhere in the appication. 
+7) pageContext - we can store somevalues using this. This obeject can store values just like session and application for this we have to set the scope  
+
+we are requesting from browser and we are responding to the browser
+
+embedding java code in html
+<%=email %> email is the name of the variable
+
+Tags in jsp
+<% java code call your methods here %>
+<%! java methods goes in here %>
+<%@page directive, or header level values %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"
+    import="java.util.ArrayList"
+    %>

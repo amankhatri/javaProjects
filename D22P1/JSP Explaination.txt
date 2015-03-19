@@ -1,0 +1,17 @@
+scripting elements
+implicit objects 
+jsp directives
+and actions
+
+JSp runs in translation phase and execution phase
+In translation phase jsp page is compiled into a servlet
+-called jsp page implementation class
+The conversion of jsp to servlet occurs only onces because first time, the jsp gets converted to servlet, and from next time onwards the recompliation is not required.
+
+
+In execution phase the compiled jsp is processed. 
+
+<% java code goes here in jsp files%>
+<%! methods java goes here %>
+
+for jsps we don't need any entries in web.xml
