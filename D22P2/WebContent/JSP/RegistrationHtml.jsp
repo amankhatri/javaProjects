@@ -35,12 +35,13 @@ Hello <%=email %>
 %>
 
 Storing a string to the Session variable
-Name: <% session.getAttribute("nam");%>
 <br>
-Storing a string to the Application
-email: <% application.getAttribute("eid");%>
+Name: <% session.setAttribute("nam",request.getAttribute("nam"));%>
 <br>
-Education: <% pageContext.getAttribute("edu",pageContext.SESSION_SCOPE); %>
+Retrieving the string from session variable
+<b>Name:</b><%=session.getAttribute("nam") %>
+<br>
+
 
 
 </body>
