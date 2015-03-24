@@ -1,7 +1,7 @@
 In JSP we don't have doget or do post methods. JSP uses implicit objects. Implicit objects are already created objects for you. You don't have to create 
 Response response = new Response() you can just go ahead and use them
 
-We have implesic objects
+We have implecit objects
 1) Page
 2) Request - THis is an object of class httpservletRequest which is a ready made object (Implicit object). 
 3) Response- Is a type of http servlet response

@@ -26,23 +26,14 @@ testMethod();
 %>
 
 <h2>
-Hello <%=email %>
+Hello <%=name %>
+email is: <% out.print(email); %>
 </h2>
 
 <%! public void testMethod(){
 	System.out.println("Write Java methods here");
 }
 %>
-
-Storing a string to the Session variable
-<br>
-Name: <% session.setAttribute("nam",request.getAttribute("nam"));%>
-<br>
-Retrieving the string from session variable
-<b>Name:</b><%=session.getAttribute("nam") %>
-<br>
-
-
 
 </body>
 </html>
