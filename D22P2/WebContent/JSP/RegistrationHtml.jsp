@@ -17,10 +17,12 @@ We have implesic objects
 2) Request - THis is an object of class httpservletRequest which is a ready made object (Implicit object). 
 3) Sessions
 */
+
 String name = request.getParameter("nam");
 String email = request.getParameter("eid");
 String education = request.getParameter("edu");
 System.out.println(name);
+
 testMethod();
 
 %>
