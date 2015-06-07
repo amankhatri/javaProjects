@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+	<servlet>
+		<servlet-name>SomeName1</servlet-name>
+		<servlet-class>HttpServletDemo</servlet-class> <!--  name of the class -->
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>SomeName1</servlet-name>
+	<url-pattern>/giveUrlPattern</url-pattern> <!-- this is a pattern when ever a server sees
+	this type of pattern server will call the servlet with name "SomeName1" it can be *.z, that
+	means when ever a pattern with someName .z occurs call this -->
+	
+	</servlet-mapping>
+
+</web-app>
